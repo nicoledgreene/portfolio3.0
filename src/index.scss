@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo-container {
+        width: 90%;
+        position: relative;
+
+        .site-title {
+            position: absolute;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            top: 40%;
+            z-index: 1;
+            text-align: center;
+
+            span {
+                display: block;
+                letter-spacing: 0.6rem;
+                line-height: 2.3rem;
+                color: white; //TEMP need to make dynamic based on site theme
+                text-transform: uppercase;
+            }
+            span:first-of-type {
+                font-size: 1.6rem;
+            }
+            span:nth-of-type(2) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+.switch-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-nav {
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px;
+}
