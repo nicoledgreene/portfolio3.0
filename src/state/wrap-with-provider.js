@@ -5,5 +5,10 @@ import rootReducer from "./reducers"
 import React from "react"
 
 const store = createStore(rootReducer, composeWithDevTools())
+console.log(store);
 
-export default ({ element }) => <Provider store={store}>{element}</Provider>
+export default ({ element }) => (
+  <Provider store={store}>
+      {element}
+  </Provider>
+);

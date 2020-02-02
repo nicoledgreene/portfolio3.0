@@ -9,6 +9,7 @@ const Header = ({ siteTitle }) => (
     <Helmet>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="../index.scss" />
     </Helmet>
     <Nav />
   </header>

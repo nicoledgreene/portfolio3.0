@@ -5,15 +5,15 @@ const initialState = {
   isDarkMode: false,
 }
 
-const theme = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
     if(action.type===TOGGLE_THEME) {
-      return {
+      return Object.assign({
         ...state,
         isDarkMode: !state.isDarkMode
-      }
+      })
     } else {
-      return state;
+      return Object.assign({}, state);
     }
 }
 
-export default combineReducers({ theme })
+export default combineReducers({ reducer })
