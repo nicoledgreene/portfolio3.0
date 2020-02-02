@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { StaticQuery, graphql } from "gatsby";
 
 const Logo = ({isDarkMode}) => {
-
   return (
     <StaticQuery
       query={graphql`
@@ -38,8 +37,6 @@ const Logo = ({isDarkMode}) => {
     />
   )
 }
-
-const map
 
 export default connect(
   null
